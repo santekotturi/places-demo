@@ -13,7 +13,7 @@ Places Demo
 3. Search nearby based on geolocation
 
 ## Not Working:
-1. Turning list of returned Nearby Places to markers on the map (currently just logs them to console)
+1. Turning list of returned Nearby Places to markers on the map
 
 
 ## To use:
