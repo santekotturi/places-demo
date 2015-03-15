@@ -1,14 +1,18 @@
 angular.module('starter.controllers', [])
 
 .controller('DashCtrl', function($scope, $cordovaGeolocation, uiGmapGoogleMapApi, uiGmapIsReady, ngGPlacesAPI) {
+	
 	var posOptions = {timeout: 10000, enableHighAccuracy: false};
+  	
+  	// get user location with ngCordova geolocation plugin
   	$cordovaGeolocation
 	    .getCurrentPosition(posOptions)
 	    .then(function (position) {
 	      $scope.lat  = position.coords.latitude;
 	      $scope.long = position.coords.longitude;
 
-	      var places = ngGPlacesAPI.nearbySearch({
+	      // get nearby places once we have user loc in lat & long	
+	      ngGPlacesAPI.nearbySearch({
 	          latitude: $scope.lat,
 	          longitude: $scope.long
 	      }).then(
@@ -44,8 +48,6 @@ angular.module('starter.controllers', [])
 	    }, function(err) {
 	      // error
 	    });
-
-
 
     $scope.getMap = function() {
         var map1 = $scope.control.getGMap();
