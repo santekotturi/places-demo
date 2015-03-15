@@ -21,5 +21,12 @@ Places Demo
 1. `git clone https://github.com/skotturi/places-demo.git && cd places-demo`
 2. `npm install && bower install`
 3. `ionic serve --lab` 
-4. Click "Log Nearby Places to console" from the homepage
-5. In dev console you'll see the map object printed and the places array. 
+4. A list of Nearby Places will populate once they're loaded 
+
+## TODO:
+1. Turn list of nearby places into markers on map
+2. Allow the user to pan the map around, keeping the main marker pin centered, redo nearby location search
+3. ... ?
+
+#### License:
+MIT
