@@ -1,7 +1,7 @@
 Places Demo
 ==============
 
-## A progressing [ionic](www.ionicframework.com) app demo showing how to use:
+## A progressing [ionic](http://ionicframework.com/) app demo showing how to use:
 
 1. [ngCordova's Geolocation plugin](http://ngcordova.com/docs/plugins/geolocation/) to locate the user's device
 2. [Angular Google Maps](http://angular-ui.github.io/angular-google-maps/#!/) to display a Google Map
